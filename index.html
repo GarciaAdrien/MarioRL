@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mario Vs. Ai</title>
+    <link rel="stylesheet" href="./style/mario.css">
+  </head>
+  <body>
+    <div class="container">
+      <select onchange="reset()" id="level">
+        <option value="100">Level 0</option>
+        <option value="20">Level 1</option>
+        <option value="15">Level 2</option>
+        <option value="10">Level 3</option>
+        <option value="7">Level 4</option>
+      </select>
+      <button onclick="infiniteTrain()" id="train">Train</button>
+      <button onclick="reset()">Reset</button>
+      <button onclick="start_game()">New Game</button>
+    </div>
+    <div class="env" id="env"></div>
+    <div class="mario" id="mario"></div>
+    <div class="princess" id="princess"></div>
+    <div class="agent" id="agent"></div>
+    <code class="info" id="info"></code>
+  </body>
+  <script src="scripts/env.js"></script>
+  <script src="scripts/ai.js"></script>
+  <script src="scripts/moves.js"></script>
+  <script src="scripts/game.js"></script>
+</html>
